@@ -1,5 +1,4 @@
 import { ReactElement } from 'react';
-import Image from 'next/image';
 import styled from 'styled-components';
 
 type Props = {
@@ -17,7 +16,11 @@ type DataType = {
 const SinglePortfolio = ({data} : Props ) : ReactElement => (
   <Card>
     <a target="_blank" rel="noreferrer" href={data.link}>
-      <Image  layout="responsive" width={100} height={75} src={data.image} alt="portfolioThumbnail" />
+      
+      <a target="_blank" rel="noreferrer" href={data.link}>
+        {/* eslint-disable-next-line */ }
+        <img className="image" src={data.image} alt="portfolioThumbnail"/>
+      </a>
     </a>
     <div className="details">
       <a target="_blank" rel="noreferrer" href={data.link}><h2>{data.title}</h2></a>
@@ -39,6 +42,11 @@ const Card = styled.div`
   img {
       height: 20rem;
   }
+
+  .image {
+    width: 100%;
+  }
+
   .details {
       width: 100%;
   }
