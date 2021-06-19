@@ -1,0 +1,27 @@
+{
+  "name": "braveforest.github.io",
+  "version": "0.1.0",
+  "description": "My personal website",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 7777",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build && next export",
+    "deploy": "bash ./deploy.sh"
+  },
+  "dependencies": {
+    "next": "11.0.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.2.0",
+    "react-typed": "^1.2.0",
+    "styled-components": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.11",
+    "@types/styled-components": "^5.1.10",
+    "babel-plugin-styled-components": "^1.12.0",
+    "typescript": "4.3.4"
+  }
+}
