@@ -5,8 +5,8 @@ import Typed from 'react-typed';
 const HomePage = () : ReactElement => (
     <Container>
         <h1>
-            Hi, I'm Vincent Tai.<br />
-            I'm  full stack web developer.  <br />
+            Hi, I&apos;m Vincent Tai.<br />
+            I&apos;m  full stack web developer.  <br />
             I use {' '}
             <Typed
                 strings={[
@@ -24,12 +24,12 @@ const HomePage = () : ReactElement => (
             <br /><br />
 
             Framework I like to work with : <br/>
-            <a target="_blank" href="https://laravel.com/">Laravel</a> {' '}
-            <a target="_blank" href="https://nextjs.org/">Nextjs</a> {' '}
-            <a target="_blank" href="https://expressjs.com/">Express</a> {' '}
-            <a target="_blank" href="https://www.prisma.io/">Prisma</a> {' '}
-            <a target="_blank" href="https://angular.io/">Angular</a> {' '}
-            <a target="_blank" href="https://getbootstrap.com/">Bootstrap</a> {' '}
+            <a target="_blank" rel="noreferrer" href="https://laravel.com/">Laravel</a> {' '}
+            <a target="_blank" rel="noreferrer" href="https://nextjs.org/">Nextjs</a> {' '}
+            <a target="_blank" rel="noreferrer" href="https://expressjs.com/">Express</a> {' '}
+            <a target="_blank" rel="noreferrer" href="https://www.prisma.io/">Prisma</a> {' '}
+            <a target="_blank" rel="noreferrer" href="https://angular.io/">Angular</a> {' '}
+            <a target="_blank" rel="noreferrer" href="https://getbootstrap.com/">Bootstrap</a> {' '}
         </h1>
     </Container>
 );
