@@ -1,7 +1,6 @@
-import  { ReactElement } from 'react';
 import styled from "styled-components";
 
-const Footer = () : ReactElement => {
+const Footer = () => {
   return (
     <Container>
       <p>© {new Date().getFullYear()} Vincent Tai </p>

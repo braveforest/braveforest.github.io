@@ -1,15 +1,14 @@
-import { ReactElement } from "react";
 import styled from 'styled-components';
-import SinglePortfolio from '@/components/SinglePortfolio';
+import PortfolioCard from '@/components/PortfolioCard';
 import { projectData } from '@/constants';
 
-const PortfolioPage = () : ReactElement => (
-   <Cards>
-      {projectData.map(item => <SinglePortfolio data={item} key={item.id} />)}
-  </Cards>
+const PortfolioPage = () => (
+   <CardList>
+      {projectData.map(item => <PortfolioCard data={item} key={item.id} />)}
+  </CardList>
 );
 
-const Cards = styled.div`
+const CardList = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
@@ -20,5 +19,3 @@ const Cards = styled.div`
 `;
 
 export default PortfolioPage;
-
-

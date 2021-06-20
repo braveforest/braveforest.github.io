@@ -1,8 +1,7 @@
-import { ReactElement } from "react";
 import { AiFillGithub, AiFillFacebook, AiOutlineTwitter } from 'react-icons/ai';
 import styled from 'styled-components';
 
-const ContactPage = (): ReactElement => (
+const ContactPage = () => (
   <Container>
       <h2>Currently based in Kuala Lumpur, Malaysia</h2>
       <SocialLink>

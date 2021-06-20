@@ -1,4 +1,4 @@
-import { ReactElement, ReactNode } from 'react';
+import { ReactNode } from 'react';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyles, { Container } from './globals';
 import Meta from "@/components/Meta";
@@ -23,7 +23,7 @@ type Props = {
   children: ReactNode
 }
 
-const Theme = ({ children } : Props) : ReactElement => (
+const Theme = ({ children } : Props)  => (
   <ThemeProvider theme={theme}>
     <Meta />
     <GlobalStyles/>

@@ -1,19 +1,19 @@
+import { useState } from 'react';
 import styled from 'styled-components';
 
 type Props = {
-  data: DataType
-  key: number
+  data : {
+    id: number;
+    image: string;
+    title: string;
+    link?: string;
+    description: string;
+  }
 }
 
-type DataType = {
-  image: string
-  title: string
-  description: string
-  link?: string
-}
+const PortfolioCard = ({data} : Props ) => (
 
-const SinglePortfolio = ({data} : Props ) => (
-  <Card>
+<Card>
     <a target="_blank" rel="noreferrer" href={data.link}>
       
       <a target="_blank" rel="noreferrer" href={data.link}>
@@ -54,4 +54,4 @@ const Card = styled.div`
       grid-template-columns: 1fr;
   }
 `;
-export default SinglePortfolio;
+export default PortfolioCard;
