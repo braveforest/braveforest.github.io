@@ -14,11 +14,8 @@ type Props = {
 const PortfolioCard = ({portfolio} : Props ) => (
   <Card>
     <a target="_blank" rel="noreferrer" href={portfolio.link}>
-      
-      <a target="_blank" rel="noreferrer" href={portfolio.link}>
-        {/* eslint-disable-next-line */ }
-        <img className="image" src={portfolio.image} alt="portfolioThumbnail"/>
-      </a>
+      {/* eslint-disable-next-line */ }
+      <img src={portfolio.image} alt="portfolioThumbnail"/>
     </a>
     <div className="details">
       <a target="_blank" rel="noreferrer" href={portfolio.link}><h2>{portfolio.title}</h2></a>
@@ -38,19 +35,16 @@ const Card = styled.div`
   font-size: 2rem;
 
   img {
-      height: 20rem;
-  }
-
-  .image {
+    height: 20rem;
     width: 100%;
   }
 
   .details {
-      width: 100%;
+    width: 100%;
   }
 
   @media (max-width: 500px) {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 `;
 export default PortfolioCard;
