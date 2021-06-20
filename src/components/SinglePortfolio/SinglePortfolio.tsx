@@ -1,4 +1,3 @@
-import { ReactElement } from 'react';
 import styled from 'styled-components';
 
 type Props = {
@@ -13,7 +12,7 @@ type DataType = {
   link?: string
 }
 
-const SinglePortfolio = ({data} : Props ) : ReactElement => (
+const SinglePortfolio = ({data} : Props ) => (
   <Card>
     <a target="_blank" rel="noreferrer" href={data.link}>
       

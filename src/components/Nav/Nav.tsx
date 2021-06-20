@@ -1,8 +1,7 @@
-import { ReactElement } from 'react';
 import styled from "styled-components";
 import Link from 'next/link';
 
-const Nav = (): ReactElement => (
+const Nav = () => (
     <Container>
         <Link href="/">
             <a>Home</a>

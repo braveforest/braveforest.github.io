@@ -1,9 +1,8 @@
-import { ReactElement } from 'react';
 import Link from 'next/link';
 import { AiFillGithub, AiFillFacebook, AiOutlineTwitter } from 'react-icons/ai';
 import styled from 'styled-components';
 
-const Header = () : ReactElement =>  (
+const Header = ()  =>  (
   <Container>
     <Logo>
       <Link href="/">

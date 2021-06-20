@@ -1,8 +1,7 @@
-import { ReactElement } from 'react';
 import styled from 'styled-components';
 import Typed from 'react-typed';
 
-const HomePage = () : ReactElement => (
+const HomePage = () => (
     <Container>
         <h1>
             Hi, I&apos;m Vincent Tai.<br />
