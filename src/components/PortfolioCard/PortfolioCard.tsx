@@ -2,7 +2,7 @@ import { useState } from 'react';
 import styled from 'styled-components';
 
 type Props = {
-  data : {
+  portfolio : {
     id: number;
     image: string;
     title: string;
@@ -11,19 +11,18 @@ type Props = {
   }
 }
 
-const PortfolioCard = ({data} : Props ) => (
-
-<Card>
-    <a target="_blank" rel="noreferrer" href={data.link}>
+const PortfolioCard = ({portfolio} : Props ) => (
+  <Card>
+    <a target="_blank" rel="noreferrer" href={portfolio.link}>
       
-      <a target="_blank" rel="noreferrer" href={data.link}>
+      <a target="_blank" rel="noreferrer" href={portfolio.link}>
         {/* eslint-disable-next-line */ }
-        <img className="image" src={data.image} alt="portfolioThumbnail"/>
+        <img className="image" src={portfolio.image} alt="portfolioThumbnail"/>
       </a>
     </a>
     <div className="details">
-      <a target="_blank" rel="noreferrer" href={data.link}><h2>{data.title}</h2></a>
-      <p>{data.description}</p>
+      <a target="_blank" rel="noreferrer" href={portfolio.link}><h2>{portfolio.title}</h2></a>
+      <p>{portfolio.description}</p>
     </div>
   </Card>
 );

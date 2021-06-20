@@ -4,7 +4,7 @@ import { projectData } from '@/constants';
 
 const PortfolioPage = () => (
    <CardList>
-      {projectData.map(item => <PortfolioCard data={item} key={item.id} />)}
+      {projectData.map(item => <PortfolioCard portfolio={item} key={item.id} />)}
   </CardList>
 );
 
