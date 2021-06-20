@@ -6,10 +6,8 @@ import Nav from '@/components/Nav'
 import Content from '@/components/Content'
 import Footer from '@/components/Footer'
 
-
-function App({ Component, pageProps }: AppProps) {
-  return (
-    <Theme>
+const App = ({ Component, pageProps }: AppProps) => (
+  <Theme>
     <Container>
       <Header />
       <Nav />
@@ -18,9 +16,9 @@ function App({ Component, pageProps }: AppProps) {
       </Content>
       <Footer />
     </Container>
-    </Theme>
-  )
-}
+  </Theme>
+);
+
 export default App
 
 const Container = styled.div`
