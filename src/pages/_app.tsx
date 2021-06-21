@@ -22,8 +22,10 @@ const App = ({ Component, pageProps }: AppProps) => (
 export default App
 
 const Container = styled.div`
+  width: 100vw;
   max-width: ${props => props.theme.maxWidth};
   padding: 1rem;
+  margin: 0 auto;
 `;
 
 
